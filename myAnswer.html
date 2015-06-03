@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+</head>
+
+<body>
+
+<p>
+	<input type = "text" value = "" id = "multi1" />
+	*
+	<input type = "text" value = "" id = "multi2" />
+	>
+	<span id = "multiresult"></span>
+	</p> 
+	<p><button onclick="myFunction()">Check</button></p>
+
+<p>
+	<input type = "text" value = "" id = "multi1" /> <input type = "text" value = "" id = "multi2" /> <br>
+	<input type = "text" value = "" id = "multi3" /> <input type = "text" value = "" id = "multi4" />
+	
+	<span id = "multiresult"></span>
+	</p> 
+	<p><button onclick="sum()">Check</button></p>
+	
+	RESULT: 
+
+<table>
+    <tr>
+        <td>Row 1, cell 1</td>
+        <td>Row 1, cell 2</td>
+        <td>Row 1, cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, cell 1</td>
+        <td>Row 2, cell 2</td>
+        <td>Row 2, cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 3, cell 1</td>
+        <td>Row 3, cell 2</td>
+        <td>Row 3, cell 3</td>
+    </tr>
+    
+</table>
+</p>
+	
+	</body>
+	
+	<script>
+	function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Inputs could not be blank.");
+        return false;
+    }
+}
+	
+	function equation() {
+	var userInput = prompt("Please enter your calculation into the boxes")
+	if userInput === true {
+	alert(userInput + "is true")
+	} else {
+	alert(userInput + "is false")
+	};
+	
+
+	function sum() {
+	console.log("multi1" + "multi2" + "multi3" + "multi4");
+	}
+	
+	
+	</script>
+	
+	</html>
